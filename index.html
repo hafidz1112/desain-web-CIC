@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Universitas CIC</title>
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Animate.css CDN -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Custom Style -->
+    <style>
+        .font-bricolage {
+            font-family: "Bricolage Grotesque", sans-serif;
+        }
+        .fade-bottom {
+            mask-image: linear-gradient(to bottom, black 80%, transparent 50%);
+            -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-white">
+    <!-- Navbar -->
+    <nav class="bg-[#0451a1] z-10 p-0 px-15 w-full absolute drop-shadow-md">
+        <div class="mx-auto flex justify-between items-center">
+            <!-- Logo kiri -->
+            <div class="m-0 p-0 flex items-center justify-center w-fit space-x-0">
+            <img src="./image/udang.png" alt="" class="w-[80px] m-0 p-0 -mx-8" />
+            <img src="./image/Universitas.png" alt="" class="w-[90px] m-0 p-0 -mb-3" />
+            </div>
+
+        <!-- Menu tengah -->
+        <div class="space-x-4 animate__animated animate__fadeInUp hidden md:flex">
+            <a href="#" class="text-white">Home</a>
+            <a href="#" class="text-white">Profil</a>
+            <a href="#" class="text-white">Fakultas</a>
+            <a href="#" class="text-white">Berita</a>
+        </div>
+
+            <!-- Placeholder kanan -->
+            <div>
+            <a href="#" class="text-white">modLap</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="relative z-0 h-auto sm:min-h-[700px] bg-gray-100 flex items-center justify-center px-4 pt-26">
+        <!-- Background Image -->
+        <div class="absolute inset-0 z-0">
+            <img
+            src="./image/peta-real.png"
+            alt="Map Background"
+            class="object-cover w-full h-full"
+            />
+        </div>
+
+        <!-- Main Content -->
+        <div class="relative z-0 grid md:grid-cols-2 sm:grid-cols-1 items-center justify-center sm:gap-0 w-full px-24">
+        <!-- Text Content -->
+        <div class="flex flex-col items-center text-center mx-auto order-2 md:order-1 lg:pb-0 lg:px-2 px-10 pb-10 ">
+            <h1 class="lg:text-[45px] text-[28px] font-extrabold text-blue-800 mb-4 font-bricolage animate__animated animate__fadeInUp">
+                Selamat Datang di Universitas Catur Insan Cendekia
+            </h1>
+            <p class="text-sm lg:text-lg text-gray-700 mb-6 px-5 animate__animated animate__fadeInUp">
+                Capailah impian anda di Universitas Cantur Insan Cendekia, dan wujudkan semua mimpimu
+            </p>
+            <a href="#" class="bg-[#0451a1] text-white text-lg py-3 px-7 rounded rounded-[100px]  hover:bg-blue-800 animate__animated animate__fadeInUp">
+                Get Started
+            </a>
+        </div>
+
+        <!-- Logo & Model Mahasiswa -->
+        <div class="relative flex justify-center items-center order-1 md:order-2">
+            <!-- Logo UCIC di belakang -->
+            <div class="overflow-hidden h-[450px] w-[480px] md:w-[530px] z-0 relative">
+                <img
+                src="./image/UCIC.png"
+                alt="Logo UCIC"
+                class="w-full relative -mt-20 animate__animated animate__fadeInDown"
+                />
+            </div>
+
+            <!-- Model Mahasiswa di depan -->
+            <div class="absolute flex items-end z-10">
+            <!-- Model 3 (kiri) -->
+            <img
+                src="./image/model_3-removebg-preview.png"
+                alt="Model 3"
+                class="w-[170px] md:w-[200px] fade-bottom -mr-18 order-1 z-10 animate__animated animate__fadeInUp"
+            />
+
+            <!-- Model 1 (tengah dan paling depan) -->
+            <img
+                src="./image/model_1-removebg-preview.png"
+                alt="Model 1"
+                class="w-[180px] md:w-[200px] fade-bottom z-20 order-2 animate__animated animate__fadeInUp animate__delay-1s"
+            />
+
+            <!-- Model 2 (kanan) -->
+            <img
+            src="./image/model_2-removebg-preview.png"
+            alt="Model 2"
+            class="w-[170px] md:w-[200px] fade-bottom -ml-18 order-3 z-10 animate__animated animate__fadeInUp"
+            />
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <section class="w-full bg-[url('./image/kampus-ucic.webp')] bg-cover bg-center bg-no-repeat">
+    <div class="w-ful items-center h-auto bg-[#0451a1]/30 py-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 items-start lg:gap-5 gap-5 lg:px-10 px-7">
+        
+        <!-- Box 1 -->
+        <div class="group rounded-xl bg-white text-[#0451a1] shadow-md border p-6 hover:py-10 hover:bg-[#0451a1] hover:text-white transition-[padding] duration-800 ease-in-out flex flex-col items-center text-center space-y-4 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990">
+        <i class="fa-solid fa-bullhorn text-[50px]"></i>
+        <!-- <img src="./image/toa.png" class="w-[70px]" alt=""> -->
+        <h3 class="text-xl font-semibold">Berita Kampus</h3>
+        <p class="text-sm">Update informasi Terbaru Dari Universitas CIC Cirebon</p>
+        <a href="#" class="bg-[#0451a1] group-hover:bg-yellow-400 text-white group-hover:text-[#0451a1] px-4 py-2 rounded transition duration-400">Lihat Informasi</a>
+        </div>
+
+        <!-- Box 2 -->
+        <div class="group rounded-xl bg-[#0451a1] text-white shadow-md border p-6 hover:py-10 hover:bg-white hover:text-[#0451a1] transition-[padding] duration-800 ease-in-out flex flex-col items-center text-center space-y-4 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990">
+        <i class="fa-solid fa-camera-retro text-[50px]"></i>
+        <h3 class="text-xl font-semibold">Kegiatan Kampus</h3>
+        <p class="text-sm">Update informasi Terbaru Dari Universitas CIC Cirebon</p>
+        
+        <a href="#" class="bg-yellow-400 text-black px-4 py-2 rounded transition duration-400 group-hover:bg-[#0451a1] group-hover:text-white">
+            Lihat Informasi
+        </a>
+        </div>
+
+
+        <!-- Box 3 -->
+        <div class="group rounded-xl bg-white text-[#0451a1] shadow-md border p-6 hover:py-10 hover:bg-[#0451a1] hover:text-white transition-[padding] duration-800 ease-in-out flex flex-col items-center text-center space-y-4 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990">
+        <i class="fa-solid fa-graduation-cap text-[50px] "></i>
+        <h3 class="text-xl font-semibold">Info Beasiswa</h3>
+        <p class="text-sm">Update informasi Terbaru Dari Universitas CIC Cirebon</p>
+            <a href="#" class="bg-[#0451a1] group-hover:bg-yellow-400 text-white group-hover:text-[#0451a1] px-4 py-2 rounded transition duration-400">Lihat Informasi</a>
+        </div>
+        <!-- box 4 -->
+        <div class="group rounded-xl bg-[#0451a1] text-white shadow-md border p-6 hover:py-10 hover:bg-white hover:text-[#0451a1] transition-[padding] duration-800 ease-in-out flex flex-col items-center text-center space-y-4 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990">
+        <i class="fa-solid fa-camera-retro text-[50px]"></i>
+        <h3 class="text-xl font-semibold">Kegiatan Kampus</h3>
+        <p class="text-sm">Update informasi Terbaru Dari Universitas CIC Cirebon</p>
+        
+        <a href="#" class="bg-yellow-400 text-black px-4 py-2 rounded transition duration-400 group-hover:bg-[#0451a1] group-hover:text-white">
+            Lihat Informasi
+        </a>
+        </div>
+
+    </div>
+    </div>
+    </section>
+
+    <section class="w-full p-6 bg-[#f5f8ff]">
+    <h2 class="text-center text-xl lg:text-3xl font-bricolage font-semibold text-[#0451a1]">Berita Seputar kampus</h2>
+    <p class="text-center font-bricolage font-semibold text-yellow-400 text-center text-sm  font-bricolage font-semibold text-[#0451a1] mb-6">Universitas Catur Insan Cendikia</p>
+
+    
+    <div class="max-w-6xl mx-auto bg-white rounded-xl shadow-md p-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- Gambar besar -->
+        <div class="col-span-2 p-4 pb-0 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990">
+        <img src="./image/kegiatan1.jpg" alt="Gambar utama" class="w-full h-auto p-2 rounded-lg shadow-sm">
+        <h3 class="py-2">Program Studi Sistem Informasi UCIC Raih Akreditasi “Baik Sekali” dari LAM INFOKOM</h3>
+        </div>
+    
+    <!-- Kartu kecil di kanan -->
+    <div class="flex flex-col space-y-4 fade-in-bottom opacity-0 translate-y-10 transition-all duration-990 py-4 ">
+        
+        <!-- Kartu 1 -->
+        <div class="bg-white border border-[#0451a1] rounded-lg shadow p-3 flex space-x-3">
+            <img src="./image/kegiatan1.jpg" alt="Sub Berita" class="w-20 h-21 rounded object-cover">
+            <div>
+            <h3 class="text-sm font-semibold text-[#0451a1]">Makan Bersama</h3>
+            <p class="text-xs text-gray-600 leading-tight">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis at, cumque possimus asperiores minima dolores.
+            </p>
+            </div>
+        </div>
+
+        <!-- Kartu 2 -->
+        <div class="bg-white border border-[#0451a1] rounded-lg shadow p-3 flex space-x-3">
+            <img src="./image/UCIC.png" alt="Sub Berita" class="w-20 h-20 rounded object-cover">
+            <div>
+            <h3 class="text-sm font-semibold text-[#0451a1]">Pelantikan</h3>
+            <p class="text-xs text-gray-600 leading-tight">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci officia aliquid odio neque accusantium aut.
+            </p>
+            </div>
+        </div>
+        <!-- berita 3 -->
+        <div class="bg-white border border-[#0451a1] rounded-lg shadow p-3 flex space-x-3">
+            <img src="./image/kegiatan1.jpg" alt="Sub Berita" class="w-20 h-20 rounded object-cover">
+            <div>
+            <h3 class="text-sm font-semibold text-[#0451a1]">Tambahkan subjudul</h3>
+            <p class="text-xs text-gray-600 leading-tight">
+                ubsadjsabhdashdashbhsbdhsb dhsbhdjhsbdjhsbdhjhsbd hvsd
+            </p>
+            </div>
+        </div>
+
+        <a href="#" class="w-full border p-4  inset-x-0 bottom-0">
+            <button>Lihat Selengkapnya</button>
+        </a>
+
+    </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <!-- <footer class="bg-blue-600 p-4 text-center text-white">
+        <p>© 2023 Universitas CIC. Semua Hak Dilindungi.</p>
+    </footer> -->
+    <script src="main.js"></script>
+</body>
+</html>
